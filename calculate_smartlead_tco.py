@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MIT
 """Offline USD planning model using historical list-price benchmarks.
 Prices and packaging have not been checked live; replace with written quotes.
-See README.md for capacity assumptions, exclusions and the MIT license.
+See README.md for capacity benchmarks, exclusions and the MIT license.
 """
 import argparse
 import json
@@ -113,7 +113,7 @@ output({"scenario": "Agency TCO: separately paid email account per client", "inp
         "annual_net_benefit_vs_instantly": (instant-smart)*12+labor,
         "notes": ["Default isolation is one subscription/client, not a quoted agency bundle.",
                   "Multichannel reference is pooled and includes channels absent from this comparison.",
-                  f"Assumed annual labor benefit (separate from bills): ${labor:.2f}",
+                  f"Aerified annual labor benefit (separate from bills): ${labor:.2f}",
                   "Branding defaults to zero; enter a confirmed quote if required."]}, rows,
        {"Instantly": (instant-smart)*12, "Lemlist Email": (lem-smart)*12,
         "Lemlist Multichannel reference": (multi-smart)*12})
